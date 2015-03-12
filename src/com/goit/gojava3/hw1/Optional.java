@@ -52,7 +52,7 @@ public class Optional {
         else if (minLenght < str1.length()){
             str2 = "000000000000000000000000000".substring(0, str1.length() - minLenght) + str2;
         }
-        // now both srt have same length
+        // now both str have same length
         for (int i = 0; i < str2.length(); i++) {
             localResult += String.valueOf(((Integer.parseInt(str1.substring(i,i + 1)) + Integer.parseInt(str2.substring(i,i + 1))) % 3));
         }
